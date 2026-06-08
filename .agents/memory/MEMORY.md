@@ -1,0 +1,3 @@
+- [FCA Package Names](fca-package.md) — canonical package is `@lazyneoaz/metachat`; stale names `@neoaz07/nkxfca`, `nkx-fca`, `fca-neokex` must not be used
+- [Map vs Array API bug](map-api-bug.md) — `createThreadDataError` is a Map; use `.has()` not `.includes()`; this caused silent broken-thread retry loops
+- [24h restart causes](restart-causes.md) — multiple `process.exit()` on network failures + `intervalGetNewCookie:1440` triggered full restart; TTLMap extracted to `func/TTLMap.js`
